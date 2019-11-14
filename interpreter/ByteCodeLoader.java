@@ -47,8 +47,9 @@ public class ByteCodeLoader {
 
 
         ByteCode code = (ByteCode) Class.forName("interpreter.bytecode." + CodeTable.get(tokens[0])).newInstance();
-        if (tokens.length > 0) {
 
+        if (tokens.length > 1) {
+            code.addArgs(tokens);
         }
       }
       } catch(ClassNotFoundException | InstantiationException | IllegalAccessException e){

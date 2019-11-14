@@ -8,4 +8,9 @@ public class PopCode extends ByteCode {
     public void execute(VirtualMachine vm) {
 
     }
+
+    @Override
+    public void addArgs(String[] tokens) {
+
+    }
 }
