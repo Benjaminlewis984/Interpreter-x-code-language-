@@ -7,10 +7,10 @@ import java.util.Hashtable;
 
 //holds logic and hashmap for string references to their objects.
 public class CodeTable {
-  private  static Hashtable<String, String> codeMap = new Hashtable<String, String>();
+  private static Hashtable<String, String> codeMap = new Hashtable<String, String>();
 
   public static void init () {
-    codeMap.put("LIT", "interpreter.bytecode.LitCode" );
+    codeMap.put("LIT", "LitCode" );
     codeMap.put("HALT", "HaltCode");
     codeMap.put("Return", "ReturnCode");
     codeMap.put("Bop", "BopCode");

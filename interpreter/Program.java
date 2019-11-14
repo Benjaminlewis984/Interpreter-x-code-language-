@@ -8,6 +8,9 @@ public class Program {
 
   private Vector<ByteCode> program;
 
+  public void addCode(ByteCode code){
+    program.add(code);
+  }
   public Program(){
     program = new Vector<>();
   }

@@ -17,7 +17,6 @@ public class ByteCodeLoader {
   private boolean isPriorEndLine = true;
   LinkedList<String> items = new LinkedList<String>();
 
-
   public ByteCodeLoader(String byteCodeFile) throws IOException{
       try {
         source = new BufferedReader( new FileReader( byteCodeFile ));
@@ -37,19 +36,25 @@ public class ByteCodeLoader {
   }
 
 
-  public Program loadCodes(LinkedList<String> items){
+  public Program loadCodes(){
     Program program = new Program();
     String[] tokens = new String[3];
     String tokenHolder;
 
-    try{
-      for (int i = 0; i < items.size(); i++){
+    try {
+      for (int i = 0; i < items.size(); i++) {
         tokens = items.get(i).split(" ");
+
+
+        ByteCode code = (ByteCode) Class.forName("interpreter.bytecode." + CodeTable.get(tokens[0])).newInstance();
+        if (tokens.length > 0) {
+
+        }
       }
-      ByteCode code = (ByteCode) Class.forName("interpreter.bytecode." + tokens[0]).newInstance();
-    } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e){
-      System.out.println("Load Codes***");
-    }
+      } catch(ClassNotFoundException | InstantiationException | IllegalAccessException e){
+        System.out.println("Load Codes***");
+      }
+
 
 
     return null;
