@@ -3,6 +3,8 @@ package interpreter.bytecode;
 import interpreter.VirtualMachine;
 
 public class LoadCode extends ByteCode {
+    private int offset;
+    private String loadVariable;
     @Override
     public void execute(VirtualMachine vm) {
 
