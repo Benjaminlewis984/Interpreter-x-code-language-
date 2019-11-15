@@ -9,8 +9,13 @@ public class FalseBranchCode extends ByteCode {
 
     }
 
+    public FalseBranchCode() {
+    }
+
     @Override
     public void addArgs(String[] tokens) {
+        String address = tokens[1];
+        System.out.println(address);
 
     }
 }

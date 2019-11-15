@@ -3,7 +3,6 @@ LABEL Read
 READ
 RETURN
 LABEL Write
-LOAD 0 dummyFormal
 WRITE
 RETURN
 LABEL start<<1>>

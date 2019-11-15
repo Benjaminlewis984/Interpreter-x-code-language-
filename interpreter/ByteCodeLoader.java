@@ -38,19 +38,15 @@ public class ByteCodeLoader {
 
   public Program loadCodes(){
     Program program = new Program();
-    String[] tokens = new String[3];
-    String tokenHolder;
+    String[] tokens;
 
     try {
       for (int i = 0; i < items.size(); i++) {
         tokens = items.get(i).split(" ");
 
-
         ByteCode code = (ByteCode) Class.forName("interpreter.bytecode." + CodeTable.get(tokens[0])).newInstance();
-
-        if (tokens.length > 1) {
-            code.addArgs(tokens);
-        }
+        code.addArgs(tokens);
+        program.addCode(code);
       }
       } catch(ClassNotFoundException | InstantiationException | IllegalAccessException e){
         System.out.println("Load Codes***");

@@ -12,18 +12,18 @@ public class CodeTable {
   public static void init () {
     codeMap.put("LIT", "LitCode" );
     codeMap.put("HALT", "HaltCode");
-    codeMap.put("Return", "ReturnCode");
-    codeMap.put("Bop", "BopCode");
-    codeMap.put("Call", "CallCode");
-    codeMap.put("FalseBranch", "FalseBranchCode");
-    codeMap.put("Pop", "PopCode");
-    codeMap.put("Read", "ReadCode");
-    codeMap.put("Write", "WriteCode");
-    codeMap.put("Store", "StoreCode");
-    codeMap.put("Args", "ArgsCode");
-    codeMap.put("Label", "LabelCode");
-    codeMap.put("Goto", "GotoCode");
-    codeMap.put("Load", "LoadCode");
+    codeMap.put("RETURN", "ReturnCode");
+    codeMap.put("BOP", "BopCode");
+    codeMap.put("CALL", "CallCode");
+    codeMap.put("FALSEBRANCH", "FalseBranchCode");
+    codeMap.put("POP", "PopCode");
+    codeMap.put("READ", "ReadCode");
+    codeMap.put("WRITE", "WriteCode");
+    codeMap.put("STORE", "StoreCode");
+    codeMap.put("ARGS", "ArgsCode");
+    codeMap.put("LABEL", "LabelCode");
+    codeMap.put("GOTO", "GotoCode");
+    codeMap.put("LOAD", "LoadCode");
   }
 
 //  returns value from hashmap

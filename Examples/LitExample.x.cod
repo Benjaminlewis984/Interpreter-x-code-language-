@@ -1,4 +1,4 @@
-
+GOTO start<<1>>
 LIT 0 i
 LIT 0 i
 LIT 0 j

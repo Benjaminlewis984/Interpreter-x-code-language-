@@ -8,8 +8,11 @@ public class CallCode extends ByteCode {
 
     }
 
+    public CallCode() {
+    }
+
     @Override
     public void addArgs(String[] tokens) {
-
+        System.out.println(tokens[0] + " " + tokens[1]);
     }
 }

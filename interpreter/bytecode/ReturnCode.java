@@ -2,18 +2,20 @@ package interpreter.bytecode;
 
 import interpreter.VirtualMachine;
 
-public class PopCode extends ByteCode {
-
+public class ReturnCode extends ByteCode {
+    private String label;
     @Override
     public void execute(VirtualMachine vm) {
 
     }
 
-    public PopCode() {
+    public ReturnCode() {
     }
 
     @Override
     public void addArgs(String[] tokens) {
-        System.out.println(tokens[0] + tokens[1]);
+        label = tokens[0];
+        System.out.println(label);
+
     }
 }

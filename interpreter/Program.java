@@ -15,6 +15,7 @@ public class Program {
     program = new Vector<>();
   }
   public ByteCode getCode(int programCounter) {
-    return null;
+
+    return program.get(programCounter);
   }
 }

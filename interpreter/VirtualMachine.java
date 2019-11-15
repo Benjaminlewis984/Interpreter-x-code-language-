@@ -46,6 +46,7 @@ public class VirtualMachine {
     isRunning = true;
 
     while (isRunning) {
+      System.out.println("1");
       ByteCode code = program.getCode(pc);
 //      Abstract method execute should be overriden. Do not have double dot functions. To much coupling
       code.execute(this);

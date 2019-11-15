@@ -8,8 +8,11 @@ public class BopCode extends ByteCode {
 
     }
 
+    public BopCode() {
+    }
+
     @Override
     public void addArgs(String[] tokens) {
-
+        System.out.println(tokens[0] + tokens[1]);
     }
 }

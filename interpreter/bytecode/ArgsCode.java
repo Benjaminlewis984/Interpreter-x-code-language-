@@ -4,6 +4,9 @@ import interpreter.VirtualMachine;
 
 public class ArgsCode extends ByteCode {
 
+    public ArgsCode() {
+    }
+
     @Override
     public void execute(VirtualMachine vm) {
 
@@ -11,6 +14,6 @@ public class ArgsCode extends ByteCode {
 
     @Override
     public void addArgs(String[] tokens) {
-
+        System.out.println(tokens[0]);
     }
 }

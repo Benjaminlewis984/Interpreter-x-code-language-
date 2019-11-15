@@ -10,8 +10,11 @@ public class HaltCode extends ByteCode {
 
     }
 
+    public HaltCode() {
+    }
+
     @Override
     public void addArgs(String[] tokens) {
-
+        System.out.println(tokens[0]);
     }
 }
