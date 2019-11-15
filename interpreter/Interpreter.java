@@ -17,6 +17,7 @@ public class Interpreter {
 
   void run() {
     Program program = byteCodeLoader.loadCodes();
+    program.resolveSymbolicAddress();
     VirtualMachine vm = new VirtualMachine(program);
     vm.executeProgram();
   }

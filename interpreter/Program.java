@@ -11,6 +11,14 @@ public class Program {
   public void addCode(ByteCode code){
     program.add(code);
   }
+  public void resolveSymbolicAddress(){
+    for (ByteCode code : program){
+      if (ByteCode code != null ) {
+        System.out.println("LabelCode");
+
+      }
+    }
+  }
   public Program(){
     program = new Vector<>();
   }
