@@ -14,7 +14,8 @@ public class LitCode extends ByteCode {
     public LitCode() {
     }
 
-    public void addArgs(String[] tokens){
-        System.out.println(tokens[0] + tokens[1]);
+    public void init(String[] tokens){
+        value = Integer.parseInt(tokens[1]);
+        litVariable = tokens[2];
     }
 }

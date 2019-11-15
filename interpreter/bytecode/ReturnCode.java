@@ -13,9 +13,8 @@ public class ReturnCode extends ByteCode {
     }
 
     @Override
-    public void addArgs(String[] tokens) {
-        label = tokens[0];
-        System.out.println(label);
+    public void init(String[] tokens) {
+        label = tokens[1];
 
     }
 }

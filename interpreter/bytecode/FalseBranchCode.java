@@ -3,6 +3,7 @@ package interpreter.bytecode;
 import interpreter.VirtualMachine;
 
 public class FalseBranchCode extends ByteCode {
+    private String label;
 
     @Override
     public void execute(VirtualMachine vm) {
@@ -13,9 +14,8 @@ public class FalseBranchCode extends ByteCode {
     }
 
     @Override
-    public void addArgs(String[] tokens) {
-        String address = tokens[1];
-        System.out.println(address);
+    public void init(String[] tokens) {
+        label = tokens[1];
 
     }
 }

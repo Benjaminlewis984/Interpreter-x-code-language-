@@ -13,8 +13,8 @@ public class GotoCode extends ByteCode {
         System.out.println("yee");
 
     }
-    public void addArgs(String[] tokens){
-        System.out.println(tokens[0] +"          " + tokens[1]);
+    public void init(String[] tokens){
+        label = tokens[1];
     }
 
 }

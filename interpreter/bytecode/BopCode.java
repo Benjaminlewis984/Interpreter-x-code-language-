@@ -13,7 +13,8 @@ public class BopCode extends ByteCode {
     }
 
     @Override
-    public void addArgs(String[] tokens) {
-        System.out.println(tokens[0] + tokens[1]);
+    public void init(String[] tokens) {
+        bopOperation = tokens[1];
+
     }
 }

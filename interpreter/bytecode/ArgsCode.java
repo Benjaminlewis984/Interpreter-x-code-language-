@@ -14,7 +14,7 @@ public class ArgsCode extends ByteCode {
     }
 
     @Override
-    public void addArgs(String[] tokens) {
-        System.out.println(tokens[0]);
+    public void init(String[] tokens) {
+        argumentAmount = Integer.parseInt(tokens[1]);
     }
 }

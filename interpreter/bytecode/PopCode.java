@@ -14,7 +14,7 @@ public class PopCode extends ByteCode {
     }
 
     @Override
-    public void addArgs(String[] tokens) {
-        System.out.println(tokens[0] + tokens[1]);
+    public void init(String[] tokens) {
+        stackLevel = Integer.parseInt(tokens[1]);
     }
 }
