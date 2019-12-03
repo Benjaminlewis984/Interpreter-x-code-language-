@@ -16,6 +16,5 @@ public class FalseBranchCode extends ByteCode {
     @Override
     public void init(String[] tokens) {
         label = tokens[1];
-
     }
 }

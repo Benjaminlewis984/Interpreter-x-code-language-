@@ -7,7 +7,6 @@ public class LitCode extends ByteCode {
     private int value;
     @Override
     public void execute(VirtualMachine vm) {
-        System.out.println("yee");
 
     }
 
@@ -16,6 +15,8 @@ public class LitCode extends ByteCode {
 
     public void init(String[] tokens){
         value = Integer.parseInt(tokens[1]);
-        litVariable = tokens[2];
+        if (tokens.length == 3){
+            litVariable = tokens[2];
+        }
     }
 }

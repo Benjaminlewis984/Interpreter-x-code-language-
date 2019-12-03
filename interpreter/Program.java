@@ -1,24 +1,25 @@
 package interpreter;
 
 import interpreter.bytecode.ByteCode;
+
+import java.util.HashMap;
 import java.util.Vector;
 
-//Holds verified byte codes. Probably want a vector
 public class Program {
 
   private Vector<ByteCode> program;
+  private String labelFinder = "12";
+  HashMap<String, Integer> addressResolver = new HashMap<String, Integer>();
+  private int currentAddress = 0;
 
-  public void addCode(ByteCode code){
+  public void addCode(ByteCode code) {
     program.add(code);
   }
-  public void resolveSymbolicAddress(){
-    for (ByteCode code : program){
-      if (ByteCode code != null ) {
-        System.out.println("LabelCode");
 
-      }
-    }
-  }
+public int getLength(){
+    return program.size();
+}
+
   public Program(){
     program = new Vector<>();
   }

@@ -7,7 +7,6 @@ public class PopCode extends ByteCode {
 
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public PopCode() {

@@ -39,6 +39,7 @@ public class RunTimeStack {
    * Push an item on to the runtime stack, returning the item that was just 
    * pushed.
    */
+//  convert string to object.
   public int push(int item) {
     return item;
   }
@@ -47,6 +48,7 @@ public class RunTimeStack {
    * This second form with an Integer parameter is used to load literals onto the
    * stack.
    */
+//  have interger object
   public Integer push(Integer i) {
     return 0;
   }

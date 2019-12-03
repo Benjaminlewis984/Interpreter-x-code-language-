@@ -7,7 +7,6 @@ public class LoadCode extends ByteCode {
     private String loadVariable;
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public LoadCode() {
@@ -17,6 +16,5 @@ public class LoadCode extends ByteCode {
     public void init(String[] tokens) {
         offset = Integer.parseInt(tokens[1]);
         loadVariable = tokens[2];
-
     }
 }

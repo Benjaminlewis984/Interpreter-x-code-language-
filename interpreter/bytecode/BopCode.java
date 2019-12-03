@@ -15,6 +15,5 @@ public class BopCode extends ByteCode {
     @Override
     public void init(String[] tokens) {
         bopOperation = tokens[1];
-
     }
 }
