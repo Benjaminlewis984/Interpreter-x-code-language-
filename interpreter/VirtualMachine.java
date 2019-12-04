@@ -30,7 +30,6 @@ public class VirtualMachine {
 
   private int pc;
   private RunTimeStack runTimeStack;
-  // This may not be the right parameterized type!!
   private Stack<Object> returnAddresses;
   private boolean isRunning;
   private Program program;
@@ -46,11 +45,8 @@ public class VirtualMachine {
     isRunning = true;
 
     while (isRunning) {
-      System.out.println("1");
       ByteCode code = program.getCode(pc);
-//      Abstract method execute should be overriden. Do not have double dot functions. To much coupling
       code.execute(this);
-      // runStack.dump(); // check that the operation is correct
       pc++;
     }
   }

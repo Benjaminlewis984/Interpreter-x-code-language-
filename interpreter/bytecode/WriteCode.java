@@ -5,7 +5,6 @@ import interpreter.VirtualMachine;
 public class WriteCode extends ByteCode {
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public WriteCode() {

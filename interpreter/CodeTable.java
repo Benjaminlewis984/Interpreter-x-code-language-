@@ -5,7 +5,6 @@ import interpreter.bytecode.WriteCode;
 
 import java.util.Hashtable;
 
-//holds logic and hashmap for string references to their objects.
 public class CodeTable {
   private static Hashtable<String, String> codeMap = new Hashtable<String, String>();
 
@@ -26,9 +25,7 @@ public class CodeTable {
     codeMap.put("LOAD", "LoadCode");
   }
 
-//  returns value from hashmap
   public static String get(String code) {
-
     return codeMap.get(code);
   }
 }

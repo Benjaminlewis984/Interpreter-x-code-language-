@@ -6,7 +6,6 @@ public class BopCode extends ByteCode {
     private String bopOperation;
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public BopCode() {

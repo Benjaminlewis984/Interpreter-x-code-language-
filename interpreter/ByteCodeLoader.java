@@ -7,8 +7,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.LinkedList;
 
-//Responsible for seperating based on spaces. Reads each .ine of the code file. (Constctor does that). Sends first part of seperation
-//Splits into an array of strings. Offset in bytecode vector
 public class ByteCodeLoader {
 
   private BufferedReader source;
@@ -34,7 +32,6 @@ public class ByteCodeLoader {
 
   }
 
-
   public Program loadCodes(){
     Program program = new Program();
     String[] tokens;
@@ -50,9 +47,6 @@ public class ByteCodeLoader {
       } catch(ClassNotFoundException | InstantiationException | IllegalAccessException e){
         System.out.println("Load Codes***");
       }
-
-
-
     return null;
   }
 }

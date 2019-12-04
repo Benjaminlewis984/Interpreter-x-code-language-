@@ -7,7 +7,6 @@ public class LitCode extends ByteCode {
     private int value;
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public LitCode() {

@@ -7,7 +7,6 @@ public class FalseBranchCode extends ByteCode {
 
     @Override
     public void execute(VirtualMachine vm) {
-
     }
 
     public FalseBranchCode() {

@@ -10,7 +10,9 @@ public class RunTimeStack {
   private Vector<Object> runStack;
 
   public RunTimeStack() {
-
+      framePointers = new Stack<>();
+      framePointers.push(0);
+      runStack = new Vector<>();
   }
 
   /**
